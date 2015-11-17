@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.view.kang.MainActivity">
+
+    <Button
+        android:id="@+id/get_sensor_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取本机的传感器信息"/>
+    <Button
+        android:id="@+id/receive_accelerometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始接受加速度传感器的信息"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/main_color">
+        <TextView
+            android:id="@+id/show_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="I`m here"
+            style="@android:style/TextAppearance.Holo.Large"/>
+    </ScrollView>
+    <TextView
+        android:id="@+id/show_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="I`m step"
+        style="@android:style/TextAppearance.Holo.Large"/>
+
+
+</LinearLayout>
